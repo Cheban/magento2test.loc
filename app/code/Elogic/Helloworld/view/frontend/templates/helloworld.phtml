@@ -1,0 +1,66 @@
+<div class="main-content">
+    <div class="page-title">
+       <h1>Bedankt voor uw bestelling bij PortofoonWEB!</h1>
+    </div>
+    <div class="page-content">
+        <div class="page-image">
+        <img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/content-logo.png'); ?>" />
+        </div>
+        <div class="page-text">
+            <p class="text-title">Goed om te weten</p>
+            <p class="text-content">Bent u tevreden over net bestelproces like dan onze Facebook pagina of laat een</br>
+            review achter zo maakt u ook nog eens kans op een leuke cadeau bon ter waarde van</br>
+                € 100,- Wilt u graag op de hoogte blijven van het laatste nieuws en speciale</br>
+                aanbiedingen meld u zich dsn aan op onze nieuwsbrief.
+            </p>
+            <p class="text-title">Wat gaat er nu gebeuren?</p>
+            <p class="text-content">Per email heeft u een bevestiging ontvangen van uw bestelling met Ordernummer</br>
+                [ordernummer]. Heeft u de bestelling op een werkdag voor 17:00 gedaan en betaald,</br>
+                dan gaan wij nu direct aan de slag om te zorgen dat u het morhen in huis heeft. Heeft u</br>
+                vragen over de bestelling neem dan contact met ons op 0512 - 745293 of stuur ons</br>
+                een email aan info@portofoonweb.nl
+            </p>
+            <p class="text-title">Wist u dat?</p>
+            <p class="text-content">PortofoonWEB heeft sinds kort een ferneaal nieuwe techniek genaamd Smart</br>
+                Porrofoons. Een portofoon systeem met ongekende mogelijkheden en onbeperkt</br>
+               bereik! Klik op deze link voor meer informatie.</br>
+            </p>
+            <div class="social-links">
+                <div class="social-img">
+                <img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/Smartportofoon_Logo.png'); ?>" />
+                </div>
+                <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="hr-margin">
+<div class="slider">
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/motorola.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/baofeng.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/icom.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/kenwood.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/hutera.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/motorola.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/baofeng.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/icom.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/kenwood.png'); ?>" /></div>
+    <div><img src="<?php echo $this->getViewFileUrl('Elogic_Helloworld::images/hutera.png'); ?>" /></div>
+</div>
+<script>
+    require([
+        'jquery',
+        'slick'
+    ], function ($) {
+        $(document).ready(function () {
+            $(".slider").slick({
+                autoplay: true,
+                slidesToShow: 5,
+                autoplaySpeed: 2000,
+            });
+        });
+    });
+</script>

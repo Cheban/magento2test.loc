@@ -1,0 +1,80 @@
+<div class="footer_new_links">
+    <div class="contact-footer">
+        <h2 class="link_title">Contactgegevens</h2>
+        <p class="link_text">
+            PortofoonWEB </br> Zonnedauw 16</br> 9202 PA Drachten
+        </p>
+        <p class="link_text">
+            <i class="fa fa-phone" aria-hidden="true"></i> 0512 - 745 293 </br>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> info@portofoonweb.nl
+        </p>
+        <p class="link_text">
+            K.v.K nr: 62061712 </br>
+            BTW nr: NL854624624B01
+        </p>
+    </div>
+    <div class="service-footer">
+        <h2 class="link_title">KLANTENSERVICE</h2>
+       <ul class="link_text">
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Over PortofoonWEB</a></li>
+           <li><a href="#">Offerte aanvraag</a></li>
+           <li><a href="#">Defect en Retour</a></li>
+           <li><a href="#">Garantie</a></li>
+           <li><a href="#">Veelgestelde vragen</a></li>
+           <li><a href="#">B2B</a></li>
+       </ul>
+    </div>
+    <div class="service-footer">
+        <h2 class="link_title">Algemene Informatie</h2>
+        <ul class="link_text">
+            <li><a href="#">Portofoons</a></li>
+            <li><a href="#">Toepassingen</a></li>
+            <li><a href="#">Algemene voorwaarden</a></li>
+            <li><a href="#">Betalen en Verzenden</a></li>
+            <li><a href="#">Privacy en Cookies</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
+    </div>
+    <div class="news-footer">
+        <h2 class="link_title">Nieuwsbrief</h2>
+            <p class="link_text">
+                Wilt u op de hoogte gehouden</br>
+                worden van de nieuwste</br>
+                Technieken & Aanbiedingen op het</br>
+                gebied van Portofoons?
+            </p>
+        <div class="block newsletter">
+            <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+            <div class="content">
+                <form class="form subscribe"
+                      novalidate
+                      action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+                      method="post"
+                      autocomplete="off"
+                      data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+                      id="newsletter-validate-detail">
+                    <div class="field newsletter">
+                        <div class="control">
+                            <input name="email" type="email" id="newsletter"
+                                   placeholder="<?= $block->escapeHtml(__('uw emailadres...')) ?>"
+                                   data-mage-init='{"mage/trim-input":{}}'
+                                   autocomplete="false"
+                                  />
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+                            <span><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div class="footer-icons">
+                <img src='<?php echo $this->getViewFileUrl('images/smartportofoon_logo.png'); ?>' alt="Smartportofoon">
+               <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            </div>
+    </div>
+</div>

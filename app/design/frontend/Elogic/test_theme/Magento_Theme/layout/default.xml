@@ -1,0 +1,25 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument>
+                <argument name="logo_img_height" xsi:type="number">60</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="my-account-link" remove="true" />
+        <move element="minicart" destination="header.panel" before="-"/>
+        <referenceBlock name="action.advanced" remove="true"/>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="contactBlock"  template="Magento_Theme::contactheader.phtml" after="block-search"/>
+        </referenceContainer>
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="footerNewLinks"  template="Magento_Theme::footer_new_links.phtml" before="-"/>
+        </referenceContainer>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true" />
+        <move element="copyright" destination="before.body.end" after="-"/>
+    </body>
+</page>
