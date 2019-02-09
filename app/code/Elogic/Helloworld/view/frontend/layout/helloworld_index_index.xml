@@ -2,6 +2,7 @@
     <body>
         <referenceContainer name="content">
             <block class="Elogic\Helloworld\Block\Helloworld" name="helloworld" template="helloworld.phtml" />
+            <block class="Elogic\Helloworld\Block\Helloworld" name="customer_account_knockout_test" template="Elogic_Helloworld::knockout.phtml" cacheable="false"/>
         </referenceContainer>
     </body>
 </page>
