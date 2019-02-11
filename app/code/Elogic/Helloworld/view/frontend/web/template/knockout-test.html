@@ -1,4 +1,13 @@
 <div class="component-wrapper">
+    <div class="customer_input">
+    <label class="label" for="CustomEmail"><span data-bind="i18n: 'Email'"></span></label>
+    <input name="email"
+           id="email_address"
+           type="email"
+           class="input-text"
+           data-validate="{required:true, 'validate-email':true,equalTo:'#email'}"
+           data-bind="value: customerEmailData"
+           aria-required="true">
         <label class="label" for="CustomName"><span data-bind="i18n: 'First Name'"></span></label>
             <input name="customername"
                    id="customername"
@@ -11,16 +20,29 @@
                type="text"
                class="input-text"
                data-bind="value: customerSecondNameData">
+    </div>
     <div class="primary">
         <button type="button" class="action action-login secondary" data-bind="click: addNewCustomer">
             <span data-bind="i18n: 'Save'"></span>
         </button>
     </div>
+    <table>
+        <tr>
+            <th data-bind="i18n: 'Email'"></th>
+            <th data-bind="i18n: 'First Name'"></th>
+            <th data-bind="i18n: 'Second Name'"></th>
+        </tr>
 
-    <div class="customer-list" style="width: 20%;background: gray;margin-top: 10px;" data-bind="foreach: customerName">
-        <li data-bind="text: name"></li>
-    </div>
-    <div class="customer-list" style="width: 20%;background: gray;margin-top: 10px;" data-bind="foreach: customerSecondName">
-        <li data-bind="text: secondname"></li>
-    </div>
+        <tr>
+            <td data-bind="foreach: customerEmail">
+                <p data-bind="text: email"></p>
+            </td>
+            <td data-bind="foreach: customerName">
+                <p data-bind="text: name"></p>
+            </td>
+            <td data-bind="foreach: customerSecondName">
+                <p data-bind="text: secondname"></p>
+            </td>
+        </tr>
+    </table>
 </div>
